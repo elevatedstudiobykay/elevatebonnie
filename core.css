@@ -111,6 +111,19 @@ nav a:hover {
   background-position: center 30%;
   background-repeat: no-repeat;
 }
+/* HERO IMAGE ON ABOUT PAGE */
+
+.about-page .hero {
+  background-image: linear-gradient(
+      rgba(0,0,0,0.35),
+      rgba(0,0,0,0.45)
+    ),
+    url("assets/images/bonniehero.jpg");
+
+  background-size: cover;
+  background-position: center 20%;
+  background-repeat: no-repeat;
+}
 
 .hero-inner {
   max-width: 800px;
