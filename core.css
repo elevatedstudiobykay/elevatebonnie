@@ -90,31 +90,48 @@ nav a:hover {
    ========================= */
 
 .hero {
-  min-height: 85vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 120px 20px;
   text-align: center;
+
+  background-image: linear-gradient(
+      rgba(0,0,0,0.35),
+      rgba(0,0,0,0.45)
+    ),
+    url("assets/images/bonniehero.jpg");
+
+  background-size: cover;
+  background-position: center 30%;
+  background-repeat: no-repeat;
 }
 
 .hero-inner {
   max-width: 800px;
+  padding: 40px;
+  background: rgba(0,0,0,0.15);
+  border-radius: 20px;
 }
 
 .hero h1 {
   font-family: var(--heading-font);
-  font-size: 3.4rem;
+  font-size: 3.6rem;
   font-weight: 500;
-  margin-bottom: 28px;
-  letter-spacing: 0.2px;
-  opacity: 0.95;
+  margin-bottom: 18px;
+  letter-spacing: 0.5px;
+  color: white;
+  text-shadow: 0 10px 35px rgba(0,0,0,0.6);
+}
+.hero p {
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.9);
+  text-shadow: 0 8px 25px rgba(0,0,0,0.6);
+  max-width: 520px;
+  margin: 0 auto;
 }
 
-.hero p {
-  font-size: 1.05rem;
-  color: var(--muted-text);
-}
 
 /* =========================
    SECTION BASE
