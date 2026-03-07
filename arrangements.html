@@ -1,91 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{CLIENT_NAME}} | Arrangements</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bonnie Banks | Arrangements</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Cormorant+Garamond:wght@400;600&family=DM+Serif+Display&family=Prata&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Cormorant+Garamond:wght@400;600&family=DM+Serif+Display&family=Prata&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="core.css">
-  <link rel="stylesheet" href="identities.css">
+<link rel="stylesheet" href="core.css">
+<link rel="stylesheet" href="identities.css">
 </head>
 
 <body class="rose-noir-theme">
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="arrangements.html">Arrangements</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="online-services.html">Online</a>
-    <a href="booking.html">Booking</a>
-  </nav>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="arrangements.html">Arrangements</a>
+<a href="gallery.html">Gallery</a>
+<a href="online-services.html">Online</a>
+<a href="booking.html">Booking</a>
+</nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-inner">
-      <h1>Arrangements</h1>
-      <p>{{ARRANGEMENT_INTRO_STATEMENT}}</p>
 
-      <p style="margin-top:15px; color: var(--muted-text);">
-        {{ARRANGEMENT_DISCRETION_NOTE}}
-      </p>
+<!-- ARRANGEMENTS GRID -->
 
-    </div>
-  </section>
+<section>
 
-  <!-- ARRANGEMENTS GRID -->
-  <section>
-    <div class="card-grid">
+<div class="card-grid">
 
-      <!-- ARRANGEMENT CARD 1 -->
-      <div class="card expandable">
-        <h3>{{ARRANGEMENT_TITLE_1}}</h3>
-        <div class="price">{{PRICE_1}}</div>
-        <button class="expand-btn">View Details</button>
+<!-- Private Introduction -->
 
-        <div class="expand-content">
-          <p>{{FULL_DESCRIPTION_1}}</p>
-          <p><strong>Deposit Policy:</strong> {{DEPOSIT_POLICY_1}}</p>
-          <p><strong>Screening:</strong> {{SCREENING_REQUIREMENT_1}}</p>
-        </div>
-      </div>
+<div class="card expandable">
+<h3>Private Introduction</h3>
+<div class="price">$600 / hour</div>
+<button class="expand-btn">View Details</button>
 
-      <!-- ARRANGEMENT CARD 2 -->
-      <div class="card expandable">
-        <h3>{{ARRANGEMENT_TITLE_2}}</h3>
-        <div class="price">{{PRICE_2}}</div>
-        <button class="expand-btn">View Details</button>
+<div class="expand-content">
+<p>
+A relaxed introduction designed for chemistry and connection. Perfect for a first meeting, a quick escape from the day, or a spontaneous evening encounter. Expect warm conversation, playful energy, and an effortless atmosphere that allows us to become comfortable in each other's presence.
+</p>
+</div>
 
-        <div class="expand-content">
-          <p>{{FULL_DESCRIPTION_2}}</p>
-          <p><strong>Deposit Policy:</strong> {{DEPOSIT_POLICY_2}}</p>
-          <p><strong>Screening:</strong> {{SCREENING_REQUIREMENT_2}}</p>
-        </div>
-      </div>
+</div>
 
-      <!-- ARRANGEMENT CARD 3 -->
-      <div class="card expandable">
-        <h3>{{ARRANGEMENT_TITLE_3}}</h3>
-        <div class="price">{{PRICE_3}}</div>
-        <button class="expand-btn">View Details</button>
 
-        <div class="expand-content">
-          <p>{{FULL_DESCRIPTION_3}}</p>
-          <p><strong>Deposit Policy:</strong> {{DEPOSIT_POLICY_3}}</p>
-          <p><strong>Screening:</strong> {{SCREENING_REQUIREMENT_3}}</p>
-        </div>
-      </div>
+<!-- Dinner Date -->
 
-    </div>
-  </section>
+<div class="card expandable">
+<h3>Dinner Date</h3>
+<div class="price">$1,500 • 3 Hours</div>
+<button class="expand-btn">View Details</button>
 
-  <footer>
-    © {{YEAR}} {{CLIENT_NAME}}. All Rights Reserved.
-  </footer>
+<div class="expand-content">
+<p>
+An elegant evening designed for connection and indulgence. Whether we're sharing cocktails, enjoying a beautiful dinner, or exploring the city together, this experience blends charm, laughter, and irresistible chemistry. Ideal for upscale dinners, events, or an evening that deserves a captivating companion.
+</p>
+</div>
 
-  <script src="core.js"></script>
-<script src="demo-engine.js"></script>
+</div>
+
+
+<!-- Overnight -->
+
+<div class="card expandable">
+<h3>Overnight Experience</h3>
+<div class="price">$3,500 • Overnight</div>
+<button class="expand-btn">View Details</button>
+
+<div class="expand-content">
+<p>
+An extended experience allowing us to fully unwind and enjoy one another's company without the rush of time. Perfect for luxurious evenings, intimate connection, and creating memories that linger long after the night ends. This arrangement allows for a deeper, more natural flow to the experience.
+</p>
+</div>
+
+</div>
+
+
+<!-- Fly Me To You -->
+
+<div class="card expandable">
+<h3>Fly Me To You</h3>
+<div class="price">$5,000 + travel</div>
+<button class="expand-btn">View Details</button>
+
+<div class="expand-content">
+<p>
+For those outside my current city, travel engagements can be arranged within the United States. Whether it's a special getaway, a private retreat, or a weekend escape, I am happy to travel for select arrangements. Travel accommodations and itinerary details can be discussed privately when making your inquiry.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- DISCRETION NOTE -->
+
+<section style="text-align:center; padding-top:60px;">
+
+<p style="max-width:600px; margin:0 auto;">
+All arrangements are handled personally and with care to ensure a seamless and discreet experience.
+
+A 25% deposit is required to reserve your requested date and time. The remaining balance is due at the beginning of our time together.
+</p>
+
+</section>
+
+
+<footer>
+© 2026 Bonnie Banks. All Rights Reserved.
+</footer>
+
+<script src="core.js"></script>
+
 </body>
 </html>
