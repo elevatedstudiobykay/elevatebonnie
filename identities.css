@@ -1,0 +1,116 @@
+/* =========================================
+   IDENTITY LAYER — FULL COLOR + TYPOGRAPHY
+   ========================================= */
+
+/* 01 — The Heiress (Default Soft Base) */
+body:not(.champagne-theme):not(.warm-neutral-theme):not(.soft-theme):not(.mauve-theme):not(.rose-noir-theme):not(.emerald-theme):not(.dark-theme):not(.midnight-theme):not(.power-theme) {
+  --heading-font: 'Cormorant Garamond', serif;
+}
+
+/* 02 — The Muse (Espresso Luxe) */
+body.champagne-theme {
+  --background-color: #f4efe8;
+  --surface-color: #ffffff;
+  --primary-color: #3a2e26;
+  --accent-color: #a67c52;
+  --muted-text: #7a6a5f;
+  --border-soft: rgba(58,46,38,0.08);
+  --button-text-color: #ffffff;
+  --heading-font: 'Cormorant Garamond', serif;
+}
+
+/* 03 — The Intimate (Royal Blue Elite) */
+body.warm-neutral-theme {
+  --background-color: #0e1a2b;
+  --surface-color: #16263f;
+  --primary-color: #f2f2f2;
+  --accent-color: #c6a75e;
+  --muted-text: #aab4c2;
+  --border-soft: rgba(255,255,255,0.08);
+  --button-text-color: #ffffff;
+  --heading-font: 'Cormorant Garamond', serif;
+}
+
+/* 04 — The Romantic */
+body.soft-theme {
+  --background-color: #fff6f9;
+  --surface-color: #ffffff;
+  --primary-color: #2c2c2c;
+  --accent-color: #d88aa6;
+  --muted-text: #888;
+  --border-soft: rgba(0,0,0,0.05);
+  --button-text-color: #ffffff;
+  --heading-font: 'DM Serif Display', serif;
+}
+
+/* 05 — The Seductress */
+body.mauve-theme {
+  --background-color: #efe2e8;
+  --surface-color: #ffffff;
+  --primary-color: #2c1f25;
+  --accent-color: #8f4b63;
+  --muted-text: #735a63;
+  --border-soft: rgba(0,0,0,0.06);
+  --button-text-color: #ffffff;
+  --heading-font: 'DM Serif Display', serif;
+}
+
+/* 06 — The Femme Fatale */
+body.rose-noir-theme {
+  --background-color: #1a0f14;
+  --surface-color: #23141b;
+  --primary-color: #f3e9ec;
+  --accent-color: #b04c72;
+  --muted-text: #a67a88;
+  --border-soft: rgba(255,255,255,0.05);
+  --button-text-color: #ffffff;
+  --heading-font: 'Prata', serif;
+}
+
+/* 07 — The Old Money */
+body.emerald-theme {
+  --background-color: #0f1a16;
+  --surface-color: #16231f;
+  --primary-color: #f1f5f2;
+  --accent-color: #1f7a5c;
+  --muted-text: #9fb3aa;
+  --border-soft: rgba(255,255,255,0.08);
+  --button-text-color: #ffffff;
+  --heading-font: 'Cormorant Garamond', serif;
+}
+
+/* 08 — The Night Elite */
+body.dark-theme {
+  --background-color: #111111;
+  --surface-color: #1c1c1c;
+  --primary-color: #f5f5f5;
+  --accent-color: #b48bff;
+  --muted-text: #aaa;
+  --border-soft: rgba(255,255,255,0.08);
+  --button-text-color: #ffffff;
+  --heading-font: 'Prata', serif;
+}
+
+/* 09 — The Editorial */
+body.midnight-theme {
+  --background-color: #0c0c0f;
+  --surface-color: #16161b;
+  --primary-color: #f2f2f2;
+  --accent-color: #c4a15a;
+  --muted-text: #9a9a9a;
+  --border-soft: rgba(255,255,255,0.06);
+  --button-text-color: #ffffff;
+  --heading-font: 'Prata', serif;
+}
+
+/* 10 — The Executive */
+body.power-theme {
+  --background-color: #ffffff;
+  --surface-color: #ffffff;
+  --primary-color: #111111;
+  --accent-color: #000000;
+  --muted-text: #666;
+  --border-soft: rgba(0,0,0,0.1);
+  --button-text-color: #ffffff;
+  --heading-font: 'Manrope', sans-serif;
+}
