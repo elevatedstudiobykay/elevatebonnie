@@ -11,7 +11,6 @@
 <link rel="stylesheet" href="core.css">
 <link rel="stylesheet" href="identities.css">
 
-<!-- EmailJS SDK -->
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
 </head>
@@ -30,8 +29,9 @@
 <section class="hero">
 <div class="hero-inner">
 <h1>Booking Inquiry</h1>
-<p>
-A little curiosity goes a long way. Share a few details below and I’ll be in touch soon to arrange something unforgettable.
+<p>A little curiosity goes a long way. Share a few details about yourself and the experience you have in mind, and I’ll personally review your request.</p>
+<p style="margin-top:10px;">
+All inquiries are handled personally and with complete discretion. I look forward to creating something unforgettable together.
 </p>
 </div>
 </section>
@@ -40,25 +40,27 @@ A little curiosity goes a long way. Share a few details below and I’ll be in t
 
 <form id="booking-form">
 
-<input type="text" name="name" placeholder="Full Name" required>
+<input type="text" name="name" placeholder="Full Name" autocomplete="name" required>
 
-<input type="email" name="email" placeholder="Email Address" required>
+<input type="email" name="email" placeholder="Email Address" autocomplete="email" required>
 
-<input type="tel" name="phone" placeholder="Phone Number (Optional)">
+<input type="tel" name="phone" placeholder="Phone Number (Optional)" autocomplete="tel">
 
 <select name="service" required>
 <option value="">Select Arrangement</option>
-<option value="Private Introduction">Private Introduction</option>
-<option value="Dinner Date">Dinner Date</option>
-<option value="Overnight Experience">Overnight Experience</option>
-<option value="Fly Me To You">Fly Me To You</option>
+<option value="{{ARRANGEMENT_OPTION_1}}">{{ARRANGEMENT_OPTION_1}}</option>
+<option value="{{ARRANGEMENT_OPTION_2}}">{{ARRANGEMENT_OPTION_2}}</option>
+<option value="{{ARRANGEMENT_OPTION_3}}">{{ARRANGEMENT_OPTION_3}}</option>
+<option value="{{ARRANGEMENT_OPTION_4}}">{{ARRANGEMENT_OPTION_4}}</option>
 </select>
 
 <input type="date" name="date" required>
 
-<textarea name="message" rows="6" placeholder="Introduce yourself and provide any relevant details..." required></textarea>
+<textarea name="message" rows="6" placeholder="Introduce yourself and share any details about the experience you have in mind..." required></textarea>
 
-<button type="submit" class="button-primary">Submit Inquiry</button>
+<button type="submit" class="button-primary">
+Submit Inquiry
+</button>
 
 <p id="form-status" style="margin-top:20px;"></p>
 
@@ -67,7 +69,7 @@ A little curiosity goes a long way. Share a few details below and I’ll be in t
 </section>
 
 <footer>
-© 2026 Bonnie Banks. All Rights Reserved.
+© {{YEAR}} {{CLIENT_NAME}}. All Rights Reserved.
 </footer>
 
 <script src="core.js"></script>
