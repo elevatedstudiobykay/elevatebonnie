@@ -14,59 +14,60 @@ if (expandButtons.length > 0) {
         ? "Hide Details"
         : "View Details";
     });
-  }); 
+  });
 }
 
 
 // =====================================
-// EMAILJS BOOKING SYSTEM (DUAL CONFIRMATION)
+// EMAILJS BOOKING SYSTEM
 // =====================================
 
-// Prevent errors on pages without booking form
 const bookingForm = document.getElementById("booking-form");
 
 if (bookingForm) {
 
-  emailjs.init("{{EMAILJS_PUBLIC_KEY}}");
+  // Replace with your EmailJS Public Key
+  emailjs.init(nvbirAB1ue_EJeAV7);
 
   bookingForm.addEventListener("submit", function(e) {
+
     e.preventDefault();
 
     const form = this;
     const status = document.getElementById("form-status");
     const submitBtn = form.querySelector("button");
 
-submitBtn.disabled = true;
-submitBtn.textContent = "Sending...";
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Sending...";
 
-    // 1️⃣ Send to Companion
     emailjs.sendForm(
-      "{{EMAILJS_SERVICE_ID}}",
-      "{{COMPANION_TEMPLATE_ID}}",
+      "service_tzszsfn",
+      "template_hjec2nh",
       form
     )
-    .then(() => {
 
-      // 2️⃣ Send Confirmation to Client
-      return emailjs.sendForm(
-        "{{EMAILJS_SERVICE_ID}}",
-        "{{CLIENT_CONFIRMATION_TEMPLATE_ID}}",
-        form
-      );
+    .then(function() {
+
+      status.innerText = "Inquiry received. Bonnie will contact you shortly.";
+
+      submitBtn.disabled = false;
+      submitBtn.textContent = "Submit Inquiry";
+
+      form.reset();
 
     })
- .then(() => {
-  status.innerText = "Inquiry received. Please check your email for confirmation.";
-  submitBtn.disabled = false;
-  submitBtn.textContent = "Submit Inquiry";
-  form.reset();
-})
-  .catch(() => {
-  status.innerText = "There was an issue sending your inquiry. Please verify your information and try again.";
-  submitBtn.disabled = false;
-  submitBtn.textContent = "Submit Inquiry";
-});
+
+    .catch(function() {
+
+      status.innerText = "There was an issue sending your inquiry. Please try again.";
+
+      submitBtn.disabled = false;
+      submitBtn.textContent = "Submit Inquiry";
+
+    });
+
   });
+
 }
 
 
@@ -81,16 +82,25 @@ const appearOptions = {
 };
 
 const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+
   entries.forEach(entry => {
+
     if (!entry.isIntersecting) return;
+
     entry.target.classList.add("visible");
+
     observer.unobserve(entry.target);
+
   });
+
 }, appearOptions);
 
 faders.forEach(fader => {
+
   fader.classList.add("fade-in");
+
   appearOnScroll.observe(fader);
+
 });
 
 
@@ -99,11 +109,15 @@ faders.forEach(fader => {
 // =====================================
 
 const currentPage = window.location.pathname.split("/").pop();
+
 const navLinks = document.querySelectorAll("nav a");
 
 navLinks.forEach(link => {
-  if (link.getAttribute("href") === currentPage) {
-    link.style.color = "var(--accent-color)";
-  }
-});
 
+  if (link.getAttribute("href") === currentPage) {
+
+    link.style.color = "var(--accent-color)";
+
+  }
+
+});
