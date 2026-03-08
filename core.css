@@ -340,3 +340,22 @@ footer {
   color: var(--muted-text);
   margin-top: 26px;
 }
+/* =========================
+   BOOKING STATUS MESSAGE
+   ========================= */
+
+#form-status {
+  text-align: center;
+  font-size: 14px;
+  color: var(--muted-text);
+  margin-top: 20px;
+}
+
+/* =========================
+   FORM BUTTON LOADING STATE
+   ========================= */
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
