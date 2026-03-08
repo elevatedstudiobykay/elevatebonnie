@@ -27,7 +27,7 @@ const bookingForm = document.getElementById("booking-form");
 if (bookingForm) {
 
   // Replace with your EmailJS Public Key
-  emailjs.init(nvbirAB1ue_EJeAV7);
+  emailjs.init("nvbirAB1ue_EJeAV7");
 
   bookingForm.addEventListener("submit", function(e) {
 
